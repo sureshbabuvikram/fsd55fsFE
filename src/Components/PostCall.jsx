@@ -10,7 +10,7 @@ const PostCall = () => {
 
     const postCall=async()=>{
         const payload= {firstName:'vel ', lastName:'ponnusamy', email:'vel@gmail.com', designation:'Team Lead'}
-        axios.post('http://localhost:5000/api/create-emp',payload)
+        axios.post('https://fsd55fsbe.onrender.com/api/create-emp',payload)
         .then((res)=>{setPostCallData(res.data.data)
             setPostCallMsg(res.data.message)
         })

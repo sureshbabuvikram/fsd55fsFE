@@ -10,7 +10,7 @@ const UpdateCall = () => {
     const updateCall = async () => {
         const email = "vel@gmail.com"
         const payloads = { firstName: 'vel', lastName: 'ponnusamy', designation: 'COE' }
-        axios.put(`http://localhost:5000/api/edit-emp/${email}`, payloads)
+        axios.put(`https://fsd55fsbe.onrender.com/api/edit-emp/${email}`, payloads)
             .then((res) => setPutCallData(res.data.data))
             .catch((err) => console.log(err))
     }

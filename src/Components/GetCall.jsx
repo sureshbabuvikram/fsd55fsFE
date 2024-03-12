@@ -9,7 +9,7 @@ const GetCall = () => {
         fetchData();
     }, [])
     const fetchData = async () => {
-        axios.get('http://localhost:5000/api/get-empdetails')
+        axios.get('https://fsd55fsbe.onrender.com/api/get-empdetails')
             .then((res) => {
                 setGetCallData(res.data.data)
                 setGetCallMsg(res.data.message)
